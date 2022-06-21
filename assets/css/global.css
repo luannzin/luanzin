@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.infinitoAlem {
+  position: relative;
+  top: -10000px;
+}
+
+body {
+  background: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: calc(100vw - 20%);
+  margin: 0px 10%;
+  height: 64px;
+  align-items: center;
+  display: flex;
+  color: #EDEDED;
+  justify-content: space-between;
+  font-family: "Roboto Condensed", sans-serif;
+}
+header a {
+  text-decoration: none;
+  color: #EDEDED;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+header a:hover {
+  border-radius: 16px;
+  background: #444444;
+  padding: 6px 12px;
+  transition: 0.4s ease;
+  margin: 0 8px;
+}
+
+button {
+  margin: 80px 20px 0px 20px;
+  border-radius: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  color: #EDEDED;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  -webkit-animation: gradient 4s ease infinite;
+          animation: gradient 4s ease infinite;
+  background-size: 400% 400%;
+  filter: saturate(4);
+}
+
+.underlined {
+  border-bottom: 2px solid #EDEDED;
+  border-radius: 2px;
+}
+
+.flyer {
+  margin-top: 100px;
+  background: url(../svg/FLYERS.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flyer .main_flyer {
+  display: flex;
+  margin: 0px 16%;
+  justify-content: space-between;
+}
+.flyer .main_flyer .flyer_img {
+  transition: 0.15s ease;
+  width: 400px;
+  height: 300px;
+  border: 2px solid #EDEDED;
+  margin-right: calc(5vw + 5vh);
+}
+.flyer .main_flyer .flyer_img:hover {
+  box-shadow: 5px 5px 15px -5px #000000;
+  transition: 0.15s ease;
+}
+.flyer .main_flyer .flyer_desc {
+  width: 800px;
+  max-height: 300px;
+  font-size: 32px;
+  text-align: right;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #EDEDED;
+}
+.flyer .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalhes {
+  background: linear-gradient(to left, #222831, #393E46);
+  color: #EDEDED;
+  width: 120px;
+  height: 40px;
+}
+
+.comprar {
+  width: 160px;
+  height: 50px;
+  background: linear-gradient(to left, #F05454, #7D0633);
+}
+
+.amv {
+  background: url(../svg/AMV’s.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.amv .main_amv {
+  display: flex;
+  margin: 0px 16%;
+  justify-content: space-between;
+}
+.amv .main_amv .amv_img {
+  transition: 0.15s ease;
+  width: 400px;
+  height: 300px;
+  border: 2px solid #EDEDED;
+  margin-left: calc(5vw + 5vh);
+}
+.amv .main_amv .amv_img:hover {
+  box-shadow: 5px 5px 15px -5px #000000;
+  transition: 0.15s ease;
+}
+.amv .main_amv .amv_desc {
+  width: 800px;
+  max-height: 300px;
+  font-size: 32px;
+  text-align: left;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #EDEDED;
+}
+.amv .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=global.css.map */

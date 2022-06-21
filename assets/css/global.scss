@@ -1,0 +1,154 @@
+@import './_reset.scss';
+@import './_variables.scss';
+
+.infinitoAlem{
+    position: relative;
+    top: -10000px;
+}
+
+body{
+    background: $black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position:fixed;
+    top: 0px;
+    width: calc(100vw - 20%);
+    margin: 0px 10%;
+    height: 64px;
+    align-items: center;
+    display: flex;
+    color: $white;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+    a{
+        text-decoration: none;
+        color: $white;
+        margin: 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.4s ease;
+        &:hover{
+            border-radius: 16px;
+            background: $gray;
+            padding: 6px 12px;
+            transition: 0.4s ease;
+            margin: 0 8px;
+        }
+    }
+    
+}
+button{
+    margin: 80px 20px 0px 20px;
+    border-radius: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    color: $white;
+    font-weight: bold;
+    &:hover{
+        cursor: pointer;
+        animation: gradient 4s ease infinite;
+        background-size: 400% 400%;
+        filter: saturate(4);
+    }
+}
+
+.underlined{
+    border-bottom: 2px solid $white;
+    border-radius: 2px;
+}
+
+.flyer{
+    margin-top: 100px;
+    background: url(../svg/FLYERS.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .main_flyer{
+        display: flex;
+        margin: 0px 16%;
+        justify-content: space-between;
+        .flyer_img{
+            transition: 0.15s ease;
+            width: 400px;
+            height: 300px;
+            border: 2px solid $white;
+            margin-right: calc(5vw + 5vh);
+            &:hover{
+                box-shadow: 5px 5px 15px -5px #000000;
+                transition: 0.15s ease;
+            }
+        }
+        .flyer_desc{
+            width: 800px;
+            max-height: 300px;
+            font-size: 32px;
+            text-align: right;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: $white;
+        }
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.detalhes{
+    background: linear-gradient(to left, #222831, #393E46);
+    color: $white;
+    width: 120px;
+    height: 40px;
+}
+.comprar{
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(to left, $secondary-red, $terciary-red);
+}
+
+.amv{
+    background: url(../svg/AMV’s.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .main_amv{
+        display: flex;
+        margin: 0px 16%;
+        justify-content: space-between;
+        .amv_img{
+            transition: 0.15s ease;
+            width: 400px;
+            height: 300px;
+            border: 2px solid $white;
+            margin-left: calc(5vw + 5vh);
+            &:hover{
+                box-shadow: 5px 5px 15px -5px #000000;
+                transition: 0.15s ease;
+            }
+        }
+        .amv_desc{
+            width: 800px;
+            max-height: 300px;
+            font-size: 32px;
+            text-align: left;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: $white;
+        }
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
